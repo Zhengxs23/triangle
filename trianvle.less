@@ -1,0 +1,59 @@
+ul{
+    li{
+        width: 0;
+        height: 0;
+        list-style: none;
+        float: left;;
+    }
+}
+.triangleUp( @size,@color){
+    border-left:  @size*10px  solid transparent;
+    border-bottom: @size*10px  solid @color;
+    border-right: @size*10px  solid transparent;
+}
+.triangleDown( @size,@color){
+    border-left:  @size*10px  solid transparent;
+    border-top:  @size*10px  solid @color;
+    border-right: @size*10px  solid transparent;
+}
+.triangleLeft( @size,@color){
+    border-top: @size*10px solid transparent;
+    border-right: @size*10px solid @color;
+    border-bottom: @size*10px solid transparent;
+}
+.triangleRight( @size,@color){
+    border-top:  @size*10px  solid transparent;
+    border-left:  @size*10px  solid @color;
+    border-bottom:  @size*10px  solid transparent;
+}
+#li1{
+    .triangleLeft( 5,red);
+    margin-right: 20px;
+
+}
+#li2{
+    .triangleLeft( 3,blue);
+    margin-right: 20px;
+}
+#li3{
+    .triangleDown( 5,red)
+}
+#li4{
+    .triangleDown( 3,black);
+}
+#li5{
+    .triangleRight( 5,red);
+    margin-right: 20px;
+}
+#li6{
+    .triangleRight( 3,blue);
+    margin-right: 20px;
+}
+#li7{
+    .triangleUp( 5,red);
+    margin-top: 40px;
+}
+#li8{
+    .triangleUp( 3,blue);
+    margin-top: 40px;
+}
